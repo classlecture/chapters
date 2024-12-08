@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject Chapter link</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff7eb3, #8e44ad);
+            color: white;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        header h1 {
+            font-size: 3em;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .subject {
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .subject:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+        .subject img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .subject h2 {
+            margin-top: 10px;
+            font-size: 2em;
+        }
+        .chapters {
+            margin-top: 15px;
+        }
+        .chapters a {
+            display: block;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            transition: background 0.3s, color 0.3s;
+        }
+        .chapters a:hover {
+            background: rgba(255, 255, 255, 0.8);
+            color: black;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chapter list</h1>
+        <p>Explore chapters with ease!</p>
+    </header>
+
+    <div class="container">
+        <!-- Subject 1 -->
+        <div class="subject">
+            <img src="https://i.postimg.cc/0N29jCS4/2362935.jpg" alt="Math Subject">
+            <h2>Math</h2>
+            <div class="chapters">
+                <a href="https://classlecture.github.io/dynamics/">সমতলে বস্তুকণার গতি</a>
+            </div>
+        </div>
+
+        <!-- Subject 2 -->
+        <div class="subject">
+            <img src="https://i.postimg.cc/6q6qXN08/Physics-img.jpg" alt="Physics Subject">
+            <h2>Physics</h2>
+            <div class="chapters">
+                <a href="https://classlecture.github.io/current/">চল তড়িৎ</a>
+            </div>
+        </div>
+
+        <!-- Subject 3 -->
+        <div class="subject">
+            <img src="https://i.postimg.cc/mD1f1pgm/hand-drawn-chemistry-background-23-2148164901.jpg" alt="Chemistry Subject">
+            <h2>Chemistry</h2>
+            <div class="chapters">
+                <a href="https://classlecture.github.io/en.chem/">পরিবেশ রসায়ন</a>
+            </div>
+        </div>
+
+        <!-- Subject 4 
+        <div class="subject">
+            <img src="language.jpg" alt="Language Subject">
+            <h2>Language</h2>
+            <div class="chapters">
+                <a href="language-ch1.html">Chapter 1: Grammar</a>
+                <a href="language-ch2.html">Chapter 2: Literature</a>
+                <a href="language-ch3.html">Chapter 3: Poetry</a>
+            </div>
+        </div>
+
+        <!-- Subject 5 
+        <div class="subject">
+            <img src="computer.jpg" alt="Computer Science Subject">
+            <h2>Computer Science</h2>
+            <div class="chapters">
+                <a href="cs-ch1.html">Chapter 1: Programming</a>
+                <a href="cs-ch2.html">Chapter 2: Data Structures</a>
+                <a href="cs-ch3.html">Chapter 3: Algorithms</a>
+            </div>
+        </div> -->
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Interactive Learning Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
